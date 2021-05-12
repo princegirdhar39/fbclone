@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <SidebarRow src="https://expertphotography.com/wp-content/uploads/2018/10/cool-profile-pictures-retouching-1.jpg" 
-      title="Prince" />
+      title="Pam" />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="Covid-19 Information Center"

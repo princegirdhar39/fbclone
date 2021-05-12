@@ -15,7 +15,7 @@
 .messageSender_top {
     display: flex;
     padding: 15px;
-    align-items: c5nter;
+    align-items: center;
 
 }
 .messageSender_top > form {

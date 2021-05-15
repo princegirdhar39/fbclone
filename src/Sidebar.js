@@ -8,14 +8,19 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { useStateValue } from "./StateProvider";
 
 
 
 const Sidebar = () => {
+  const [{user}, dispatch] = useStateValue();
+
+
+
   return (
     <div className="sidebar">
-      <SidebarRow src="https://expertphotography.com/wp-content/uploads/2018/10/cool-profile-pictures-retouching-1.jpg" 
-      title="Pam" />
+      <SidebarRow src={user.photoURL} 
+      title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="Covid-19 Information Center"
